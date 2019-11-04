@@ -1,6 +1,5 @@
 package com.ming.blog.test;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +20,7 @@ public class Test {
     @Resource
     private RestTemplate restTemplate;
 
-    @HystrixCommand(fallbackMethod = "errorMethod")
+//    @HystrixCommand(fallbackMethod = "errorMethod")
     @GetMapping("/test")
     public String test() {
         String object = this.restTemplate.getForObject("http://client-order:7900/test/demo", String.class);

@@ -16,7 +16,8 @@ spring cloud 学习笔记
 出现的问题：
 
     1. java.lang.IllegalStateException: No instances available for client-order] with root cause
-    
+        这个问题在第二个提交时出现，但是过一会就好了，
+        但是添加hystrix模块后总是出现，目前为找到问题所在
     2. de-registration failedCannot execute request on any known server
     
-    3。 
+    3. was unable to refresh its cache! status = Cannot execute request on any known server
