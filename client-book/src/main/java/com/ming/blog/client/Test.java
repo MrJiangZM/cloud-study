@@ -31,9 +31,15 @@ public class Test {
         log.info("{}", choose.getPort());
     }
 
+    /**
+     * 注入一个名为restTemplate的bean
+     * 表明这个 restTemplate 开启了负载均衡的功能
+     *
+     * @return
+     */
     @Bean
     @LoadBalanced
-    public RestTemplate restTemplate(){
+    public RestTemplate restTemplate() {
         return new RestTemplate();
     }
 
@@ -41,7 +47,7 @@ public class Test {
     private RestTemplate restTemplate;
 
     @GetMapping("/demo")
-    public String ConsumerDemo(){
+    public String ConsumerDemo() {
         String object = this.restTemplate.getForObject("http://client-order:7900/test/demo", String.class);
         return object + "22222";
     }

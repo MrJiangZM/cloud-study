@@ -8,8 +8,9 @@
         <version>2.1.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>client-hystrix</artifactId>
 
     <dependencies>
 
@@ -48,7 +49,6 @@
 
     </dependencies>
 
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -60,9 +60,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-
-    <artifactId>client-book</artifactId>
-
 
 </project>

@@ -1,12 +1,12 @@
 server:
-  port: 7901
+  port: 7905
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:6868/eureka/
     instance:   # 让客户端定时刷新，能发现客户端是否在线
-      leaseRenewalIntervalInSeconds: 1
-      leaseExpirationDurationInSeconds: 2
+      lease-renewal-interval-in-seconds: 1
+      lease-expiration-duration-in-seconds: 2
 
 management:
   endpoints:
@@ -16,7 +16,7 @@ management:
 
 spring:
   application:
-    name: client-book
+    name: client-hystrix
 
 client-order:
   ribbon:
