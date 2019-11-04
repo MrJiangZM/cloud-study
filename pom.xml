@@ -11,6 +11,9 @@
     <modules>
         <module>eureka</module>
         <module>common</module>
+        <module>client-order</module>
+        <module>client-book</module>
+        <module>client-order-bak</module>
     </modules>
 
     <description>Demo project for Spring cloud alibaba</description>
