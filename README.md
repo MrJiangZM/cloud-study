@@ -9,6 +9,8 @@ spring cloud 学习笔记
 3. client的问题
 4. 跨服务调用的问题
 5. ribbon 负载均衡的使用 注解，验证等
+题
+========================  验证到这里是出错，总是找不到instance，需要定问
 
 6. Hystrix 断路器（熔断等问题）
     Hystrix提供了熔断、隔离、Fallback、cache、监控等功能
