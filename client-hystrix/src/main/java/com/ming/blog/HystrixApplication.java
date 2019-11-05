@@ -23,6 +23,8 @@ public class HystrixApplication {
 
     @Bean
     @LoadBalanced
-    RestTemplate restTemplate(){return new RestTemplate();}
+    RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 
 }
