@@ -19,12 +19,19 @@ public class Test {
 
     @Resource
     private RestTemplate restTemplate;
+    @Resource
+    private TestService testService;
 
 //    @HystrixCommand(fallbackMethod = "errorMethod")
     @GetMapping("/test")
     public String test() {
         String object = this.restTemplate.getForObject("http://client-order:7900/test/demo", String.class);
         return object + "22222";
+    }
+
+    @GetMapping("/ddd")
+    public String test1() {
+        return testService.getOrder("tttt");
     }
 
     public String errorMethod() {

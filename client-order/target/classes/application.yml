@@ -19,3 +19,7 @@ management:
 spring:
   application:
     name: client-order
+
+feign:
+  hystrix:
+    enabled: true

@@ -2,11 +2,12 @@ server:
   port: 7905
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:6868/eureka/
     instance:   # 让客户端定时刷新，能发现客户端是否在线
       lease-renewal-interval-in-seconds: 1
       lease-expiration-duration-in-seconds: 2
+
 
 management:
   endpoints:
@@ -21,3 +22,6 @@ spring:
 #client-order:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule  # 这里可以指定负载均衡的算法策略
+feign:
+  hystrix:
+    enabled: true

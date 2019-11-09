@@ -17,4 +17,10 @@ public class Test {
         return "55555";
     }
 
+    @GetMapping("/ddd")
+    public String test1(String id) {
+        throw new RuntimeException();
+//        return "55555" + id;
+    }
+
 }

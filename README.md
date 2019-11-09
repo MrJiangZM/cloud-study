@@ -28,6 +28,9 @@ spring cloud 学习笔记
 6. Hystrix 断路器（熔断等问题）
     Hystrix提供了熔断、隔离、Fallback、cache、监控等功能
     
+    熔断器可以在其他服务报错或者不通的使用调用指定的方法!!!!!!!!!!
+    
+    
 出现的问题：
 
     1. java.lang.IllegalStateException: No instances available for client-order] with root cause
@@ -36,3 +39,10 @@ spring cloud 学习笔记
     2. de-registration failedCannot execute request on any known server
     
     3. was unable to refresh its cache! status = Cannot execute request on any known server
+    
+    
+7. feign 的用法比较方便，可以直接通过注解的方式使用，可以实现负载均衡
+    feign 使用hystrix的使用必须配置feign.hystrix.enable = true  默认是关闭的
+    
+    
+
