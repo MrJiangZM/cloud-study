@@ -2,8 +2,10 @@ server:
   port: 7900
 eureka:
   client:
-    serviceUrl:
-      defaultZone: http://localhost:6868/eureka/
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+#    serviceUrl:
+#      defaultZone: http://127.0.0.1:6868/eureka/
 #    instance:   # 让客户端定时刷新，能发现客户端是否在线
 #      lease-renewal-interval-in-seconds: 1
 #      lease-expiration-duration-in-seconds: 2
