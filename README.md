@@ -45,4 +45,10 @@ spring cloud 学习笔记
     feign 使用hystrix的使用必须配置feign.hystrix.enable = true  默认是关闭的
     
     
+8. springcloud zuul的使用与含义
+    在微服务架构中，后端服务往往不会直接开放给调用端，而是通过一个网关根据请求的url，
+    路由到相应的服务。当添加网关后，在第三方调用端和服务提供方之间就创建了一面墙，
+    这面墙直接与调用方通信进行权限控制，后将请求均衡分发给后台服务端。在Spring Cloud体系中， 
+    Spring Cloud Zuul就起到了网关的作用，它可以提供动态路由，监控，弹性，安全等的边缘服务。
 
+    https://blog.csdn.net/weixin_39800144/article/details/85012374 这篇文章的用法与    

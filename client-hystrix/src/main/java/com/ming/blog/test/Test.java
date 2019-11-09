@@ -34,6 +34,11 @@ public class Test {
         return testService.getOrder("tttt");
     }
 
+    @GetMapping("/ttt")
+    public String test2() {
+        return testService.getOrder("34343434");
+    }
+
     public String errorMethod() {
         return "这个是错的";
     }

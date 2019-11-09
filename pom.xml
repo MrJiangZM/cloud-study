@@ -15,6 +15,7 @@
         <module>client-book</module>
         <module>client-order-bak</module>
         <module>client-hystrix</module>
+        <module>zuul-server</module>
     </modules>
 
     <description>Demo project for Spring cloud alibaba</description>
