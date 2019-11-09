@@ -11,6 +11,19 @@ spring cloud 学习笔记
 5. ribbon 负载均衡的使用 注解，验证等
 题
 ========================  验证到这里是出错，总是找不到instance，需要定问
+    问题最后定位至版本问题，spring-boot使用的是2.1.6 
+    但是 spring-cloud-starter-netflix-eureka-server 版本使用的是2.1.3，倒是找不到具体的类，从而不能连接server和client
+    
+        |||
+        |||
+        |||     ===== 可以进行接下来的组件验证
+        |||
+        |||
+    \\  |||  //
+     \\ ||| //
+      \\ | //
+       \\ //
+
 
 6. Hystrix 断路器（熔断等问题）
     Hystrix提供了熔断、隔离、Fallback、cache、监控等功能
