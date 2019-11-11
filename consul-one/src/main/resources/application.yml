@@ -1,0 +1,16 @@
+server:
+  port: 7910
+
+spring:
+  cloud:
+    consul:
+      discovery:
+#        instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+#        healthCheckPath: ${management.context-path}/health
+#        healthCheckInterval: 15s
+        service-name: consul-one
+      host: 10.43.7.72
+      port: 8500
+  application:
+    name: consul-one
+

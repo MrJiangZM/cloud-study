@@ -16,6 +16,9 @@
         <module>client-order-bak</module>
         <module>client-hystrix</module>
         <module>zuul-server</module>
+        <module>consul-one</module>
+        <module>consul-two</module>
+        <module>consul-three</module>
     </modules>
 
     <description>Demo project for Spring cloud alibaba</description>
