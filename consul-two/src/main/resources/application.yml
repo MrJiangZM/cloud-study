@@ -5,11 +5,12 @@ spring:
   cloud:
     consul:
       discovery:
-        instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
-        healthCheckPath: ${management.context-path}/health
-        healthCheckInterval: 15s
+#        instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+#        healthCheckPath: ${management.context-path}/health
+        healthCheckInterval: 5s
         service-name: consul-two
-      host: 10.43.7.72
+        tags: foo=bar, baz
+      host: 10.43.2.188
       port: 8500
   application:
     name: consul-two
