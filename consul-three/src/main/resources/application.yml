@@ -10,7 +10,7 @@ spring:
         healthCheckInterval: 5s
         tags: foo=bar, baz
         service-name: consul-three
-      host: 10.43.2.188
+      host: localhost
       port: 8500
   application:
     name: consul-three

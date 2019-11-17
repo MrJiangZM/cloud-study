@@ -1,5 +1,5 @@
 server:
-  port: 7911
+  port: 7912
 
 spring:
   cloud:
@@ -10,7 +10,7 @@ spring:
         healthCheckInterval: 5s
         service-name: consul-two
         tags: foo=bar, baz
-      host: 10.43.2.188
+      host: localhost
       port: 8500
   application:
     name: consul-two
