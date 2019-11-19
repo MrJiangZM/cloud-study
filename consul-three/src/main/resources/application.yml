@@ -9,8 +9,14 @@ spring:
 #        healthCheckPath: ${management.context-path}/health
         healthCheckInterval: 5s
         tags: foo=bar, baz
+#        service-name: consul-two
         service-name: consul-three
       host: localhost
       port: 8500
   application:
+#    name: consul-two
     name: consul-three
+
+feign:
+  hystrix:
+    enabled: true

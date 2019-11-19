@@ -14,3 +14,7 @@ spring:
       port: 8500
   application:
     name: consul-two
+
+feign:
+  hystrix:
+    enabled: true

@@ -15,3 +15,7 @@ spring:
   application:
     name: consul-one
 
+feign:
+  hystrix:
+    enabled: true
+

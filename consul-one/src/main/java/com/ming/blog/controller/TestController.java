@@ -1,7 +1,8 @@
 package com.ming.blog.controller;
 
+import com.ming.blog.domain.User ;
+import com.ming.blog.service.UserService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,12 +26,22 @@ public class TestController {
     private RestTemplate restTemplate;
     @Resource
     private DiscoveryClient discoveryClient;
+    @Resource
+    private UserService userService;
 
     @GetMapping("/test1")
     public String test1(String word) {
+        // 通过这个获取不到数据
         List<ServiceInstance> instances = discoveryClient.getInstances("consul-member");
         System.out.println(instances);
         return word + "one";
+    }
+
+    @GetMapping("/test2")
+    public User test2(String word) {
+        // 通过这个获取不到数据
+        User user = userService.getUser(1);
+        return user;
     }
 
 }

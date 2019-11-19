@@ -44,6 +44,7 @@ spring cloud 学习笔记
 7. feign 的用法比较方便，可以直接通过注解的方式使用，可以实现负载均衡
     feign 使用hystrix的使用必须配置feign.hystrix.enable = true  默认是关闭的
     
+    使用consul也要配置上面的数据
     
 8. springcloud zuul的使用与含义
     在微服务架构中，后端服务往往不会直接开放给调用端，而是通过一个网关根据请求的url，
