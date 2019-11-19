@@ -1,0 +1,19 @@
+server:
+  port: 9501
+  tomcat:
+    uri-encoding: utf-8
+
+spring:
+  application:
+    name: nacos-two
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.43.2.188:8848
+      config:
+        namespace: b155d6d7-9393-403f-9827-93eb02f3414f
+        server-addr: 10.43.2.188:8848
+
+feign:
+  hystrix:
+    enabled: true

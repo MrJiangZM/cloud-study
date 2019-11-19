@@ -19,6 +19,9 @@
         <module>consul-one</module>
         <module>consul-two</module>
         <module>consul-three</module>
+        <module>nacos-one</module>
+        <module>nacos-two</module>
+        <module>nacos-three</module>
     </modules>
 
     <description>Demo project for Spring cloud alibaba</description>
