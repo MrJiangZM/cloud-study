@@ -23,8 +23,7 @@
         <module>nacos-two</module>
         <module>nacos-three</module>
         <module>config-center-one</module>
-        <module>config-center-two</module>
-        <module>config-center-tzree</module>
+        <module>config-server</module>
     </modules>
 
     <description>Demo project for Spring cloud</description>

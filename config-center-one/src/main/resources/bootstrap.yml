@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: one # 指的是application-dev.xml中的application
+  cloud:
+    config:
+      uri: http://localhost:8888 # config-server 地址
+      profile: dev # 后缀  指的是application-dev.ymlml中的dev
+      label: master # git 分支
