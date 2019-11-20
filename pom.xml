@@ -22,9 +22,12 @@
         <module>nacos-one</module>
         <module>nacos-two</module>
         <module>nacos-three</module>
+        <module>config-center-one</module>
+        <module>config-center-two</module>
+        <module>config-center-tzree</module>
     </modules>
 
-    <description>Demo project for Spring cloud alibaba</description>
+    <description>Demo project for Spring cloud</description>
 
     <build>
         <plugins>
