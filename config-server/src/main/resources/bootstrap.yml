@@ -10,6 +10,6 @@ spring:
           basedir: /Users/jiangzaiming/project/self/cloudconfig   #从git仓库拉取到的文件在本地存储的位置，可自行修改或删掉，默认存储在C盘
           username: MrJiangZM
           password:
-#        bootstrap: true
+#        bootstrap: trueaagsa
 server:
   port: 8888
